@@ -43,4 +43,9 @@ Telegram Relayers are being developed to become the main feature of the Typhoon 
 
 In essence, the introduction of Telegram Relayers within the Typhoon protocol is not just a feature, it's a leap towards democratizing blockchain privacy, making it a collective endeavor accessible to all, not just the technically adept. It's about fostering an ecosystem where privacy, income, and blockchain interaction harmoniously coexist.
 
+## Garaga
+
+[Garaga](https://github.com/keep-starknet-strange/garaga) is a great project from     Keep Starknet Strange (visit their repo [here](https://github.com/keep-starknet-strange)) that enables efficient elliptic curve operations on Starknet and is a very important part of Typhoon, with Garaga was possible to generate the verifier contract to verify the SNARK proofs from Typhoon.
+
+
 
