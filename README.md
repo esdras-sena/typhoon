@@ -29,17 +29,18 @@ As any coin mixer Typhoon aims to enhance privacy for cryptocurrency transaction
 
 Typhoon is based on Tornado Cash, mirrors its predecessor in numerous ways, yet introduces its own distinctive features. Here's what sets Typhoon apart:
 
-1. Platform \
+### Platform
 Typhoon is specifically crafted for the Starknet ecosystem, thus it's coded in Cairo, harnessing the robust capabilities and scalability of Starknet's infrastructure.
 
-2. Telegram Relayers (Under Development) \
+### Telegram Relayers (Under Development)
 Telegram Relayers are being developed to become the main feature of the Typhoon ecosystem, dramatically enhancing user privacy by resolving the longstanding "fee payment dilemma." Unlike Tornado Cash, where becoming a Relayer requires a little technical know-how to operate a node on your personal machine, Typhoon innovates with a seamless integration through a Telegram mini app. This approach not only simplifies the process but also makes it remarkably user-friendly for those less tech-savvy within the Telegram community.
 
-Benefits for Telegram Users: Imagine this: nearly one billion Telegram users can now tap into a new avenue for passive income simply by installing a mini app. All that's required is to fund the app with ETH or STRK for gas fees, thereby not only earning a little extra but also contributing to a larger network of privacy. This mini app turns the complex into the commonplace, enabling users to bolster their financial portfolios while enhancing the privacy of their digital interactions within Typhoon.
+**Benefits for Telegram Users:** Imagine this: nearly one billion Telegram users can now tap into a new avenue for passive income simply by installing a mini app. All that's required is to fund the app with ETH or STRK for gas fees, thereby not only earning a little extra but also contributing to a larger network of privacy. This mini app turns the complex into the commonplace, enabling users to bolster their financial portfolios while enhancing the privacy of their digital interactions within Typhoon.
 
-Advantages for Starknet: The integration of Telegram Relayers with Typhoon opens a gateway to Starknet for millions. To operate as a Relayer, users must interact with Starknet to supply their Relayer accounts with ETH or STRK for gas fees. This interaction could potentially funnel nearly a billion Telegram users into the Starknet ecosystem, significantly boosting its visibility, usage, and adoption. It's not just about transactions; it's about expanding a blockchain's community through practical, everyday use.
-Enhancing the Typhoon User Experience: With an influx of Telegram users turning Relayers, the landscape becomes more competitive. This competition among Relayers is anticipated to drive down fees, making privacy services through Typhoon more accessible and economically viable for users. The larger the pool of Relayers, the more dynamic and user-centric the pricing can become, ensuring that privacy doesn’t have to come at a prohibitive cost.
+**Advantages for Starknet:** The integration of Telegram Relayers with Typhoon opens a gateway to Starknet for millions. To operate as a Relayer, users must interact with Starknet to supply their Relayer accounts with ETH or STRK for gas fees. This interaction could potentially funnel nearly a billion Telegram users into the Starknet ecosystem, significantly boosting its visibility, usage, and adoption. It's not just about transactions; it's about expanding a blockchain's community through practical, everyday use.
 
-In essence, the introduction of Telegram Relayers within the Typhoon framework is not just a feature; it's a leap towards democratizing blockchain privacy, making it a collective endeavor accessible to all, not just the technically adept. It's about fostering an ecosystem where privacy, income, and blockchain interaction harmoniously coexist.
+**Enhancing the Typhoon User Experience:** With an influx of Telegram users turning Relayers, the landscape becomes more competitive. This competition among Relayers is anticipated to drive down fees, making privacy services through Typhoon more accessible and economically viable for users. The larger the pool of Relayers, the more dynamic and user-centric the pricing can become, ensuring that privacy doesn’t have to come at a prohibitive cost.
+
+In essence, the introduction of Telegram Relayers within the Typhoon protocol is not just a feature, it's a leap towards democratizing blockchain privacy, making it a collective endeavor accessible to all, not just the technically adept. It's about fostering an ecosystem where privacy, income, and blockchain interaction harmoniously coexist.
 
 
