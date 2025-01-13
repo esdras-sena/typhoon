@@ -29,10 +29,10 @@ As any coin mixer Typhoon aims to enhance privacy for cryptocurrency transaction
 
 Typhoon is based on Tornado Cash, mirrors its predecessor in numerous ways, yet introduces its own distinctive features. Here's what sets Typhoon apart:
 
-1. Platform 
+1. Platform \
 Typhoon is specifically crafted for the Starknet ecosystem, thus it's coded in Cairo, harnessing the robust capabilities and scalability of Starknet's infrastructure.
 
-2. Telegram Relayers (Under Development)
+2. Telegram Relayers (Under Development) \
 Telegram Relayers are being developed to become the main feature of the Typhoon ecosystem, dramatically enhancing user privacy by resolving the longstanding "fee payment dilemma." Unlike Tornado Cash, where becoming a Relayer requires a little technical know-how to operate a node on your personal machine, Typhoon innovates with a seamless integration through a Telegram mini app. This approach not only simplifies the process but also makes it remarkably user-friendly for those less tech-savvy within the Telegram community.
 
 Benefits for Telegram Users: Imagine this: nearly one billion Telegram users can now tap into a new avenue for passive income simply by installing a mini app. All that's required is to fund the app with ETH or STRK for gas fees, thereby not only earning a little extra but also contributing to a larger network of privacy. This mini app turns the complex into the commonplace, enabling users to bolster their financial portfolios while enhancing the privacy of their digital interactions within Typhoon.
