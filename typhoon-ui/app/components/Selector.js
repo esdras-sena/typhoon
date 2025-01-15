@@ -16,7 +16,6 @@ export const CoinSelector = ({ defaultValue, ignoreValue, setToken, id, disabled
   const menu = [
     { key: ETH, name: ETH },
     { key: STRK, name: STRK },
-    { key: USDC, name: USDC },
   ]
 
   const [selectedItem, setSelectedItem] = useState()

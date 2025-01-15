@@ -11,7 +11,7 @@ const snarkjs = require("snarkjs");
 
 const provider = new RpcProvider({ nodeUrl: 'https://free-rpc.nethermind.io/sepolia-juno/v0_7' });
 
-const typhoonAddress = "0x78b5761daa08f6cc701ca62d14b8c9e5887f02f304160369e2ba5fc8c23d3e5"
+const typhoonAddress = "0x2d3db422ca384702726a961e43e6506ec709e6f7b21c1e96655800fe7c2aaee"
 
 const { abi: typhoonAbi } = await provider.getClassAt(typhoonAddress);
 

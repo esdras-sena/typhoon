@@ -33,9 +33,10 @@ pub mod Pool {
         self.denomination.write(_denomination.try_into().unwrap());
         self.fac.write(get_caller_address());
         self.current_day.write(_current_day.try_into().unwrap());
+        let onepercent: u256 = (_denomination.try_into().unwrap() * 1) / 100;
         self
             .withdraw_fee
-            .write((_denomination.try_into().unwrap() * 5) / 100); // 5% for withdraw fee (this can be changed in future)
+            .write((onepercent * 50) / 100); // 0.5% withdraw fee (this can change until mainnet deployment)
     }
 
     #[abi(embed_v0)]

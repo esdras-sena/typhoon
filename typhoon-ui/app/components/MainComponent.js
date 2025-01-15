@@ -34,7 +34,7 @@ const MainComponent = () => {
   const [rewardMode, setRewardMode] = useState(true)
 
 
-  const typhoonAddress = "0x78b5761daa08f6cc701ca62d14b8c9e5887f02f304160369e2ba5fc8c23d3e5"
+  const typhoonAddress = "0x2d3db422ca384702726a961e43e6506ec709e6f7b21c1e96655800fe7c2aaee"
 
   const tokenToAddress = {
     "STRK": "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d",

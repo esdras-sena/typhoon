@@ -9,7 +9,6 @@ import typhoonCasm from '../target/dev/typhoon_Typhon.compiled_contract_class.js
 import poolSierra from '../target/dev/typhoon_Pool.contract_class.json' assert { type: "json" };
 import poolCasm from '../target/dev/typhoon_Pool.compiled_contract_class.json' assert { type: "json" };
 import dotenv from 'dotenv'
-import { callData } from './calldata.js';
 
 dotenv.config({ path: '../.env' })
 
@@ -55,7 +54,6 @@ async function deploy() {
     });
     await provider.waitForTransaction(verifierResponse.deploy.transaction_hash);
     console.log("hasher deployed at ", hasherResponse.deploy.contract_address)
-
     
 
     // console.log("declaring pool...")
@@ -71,7 +69,7 @@ async function deploy() {
         owner: accAddress,
         _hasher: hasherResponse.deploy.contract_address,
         _verifier: verifierResponse.deploy.contract_address,
-        _poolClassHash: "0x00e3c648bd6d245c476637d6b57fc6831fe2e979901192eb2f62e6253b1d14ce"
+        _poolClassHash: "0x04cd9372e31c454503286b620fdfadaf41f2280666745476a5231a1a8d094471"
     });
 
     console.log("deploying typhoon...")
