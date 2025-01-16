@@ -12,7 +12,6 @@ import {
   starkscan,
   useInjectedConnectors,
 } from "@starknet-react/core";
-import { RpcProvider } from "starknet";
 import { ArgentMobileConnector } from "starknetkit/argentMobile";
 import { WebWalletConnector } from "starknetkit/webwallet";
 import dotenv from 'dotenv'

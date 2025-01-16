@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState, useRef } from 'react'
 
-
+import { URL } from 'url';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
@@ -11,7 +11,6 @@ import { RpcProvider, Contract, WalletAccount, CallData, cairo } from 'starknet'
 import WithdrawField from './WithdrawField'
 import toast, { Toaster } from 'react-hot-toast'
 import { DEFAULT_VALUE, ETH, STRK } from '../utils/SupportedCoins'
-import { toEth, toWei } from '../utils/ether-utils'
 import DepositField from './DepositField'
 import { denominationsList, one } from '../utils/SupportedDenominations'
 

@@ -1,4 +1,4 @@
-import { ethers } from 'ethers'
+
 
 const utils = {
     moveDecimalLeft: (str, count) => {
@@ -35,9 +35,6 @@ const utils = {
     },
     BN256ToBI: (n) => {
         return BigInt(n)
-    },
-    BNToDecimal: (bn) => {
-        return ethers.BigNumber.from(bn).toString();
     },
 
     reverseCoordinate: (p) => {

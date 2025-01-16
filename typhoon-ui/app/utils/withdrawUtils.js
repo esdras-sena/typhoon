@@ -7,7 +7,7 @@ import { commitmentAndNullifierHash } from './depositUtils.js';
 import vk from './verification_key.json' assert { type: "json" }
 import { parseGroth16ProofFromObject, parseGroth16VerifyingKeyFromObject } from './parsingUtils';
 
-const snarkjs = require("snarkjs");
+import * as snarkjs from "snarkjs";
 
 const provider = new RpcProvider({ nodeUrl: 'https://free-rpc.nethermind.io/sepolia-juno/v0_7' });
 

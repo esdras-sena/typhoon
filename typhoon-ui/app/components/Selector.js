@@ -10,7 +10,6 @@ import {
 } from '../utils/SupportedCoins'
 
 import {  five, four, three, two, one } from '../utils/SupportedDenominations'
-import { toEth } from '../utils/ether-utils'
 
 export const CoinSelector = ({ defaultValue, ignoreValue, setToken, id, disabled }) => {
   const menu = [
