@@ -289,15 +289,15 @@ const MainComponent = () => {
       <button
         className={getBtnClassName()}
         disabled={loading}
-        onClick={() => {
+        onClick={async () => {
           if (btnText === DEPOSIT) {
             if (selectedDepositType === "Defined denominations") {
-              handleDeposit()
+              await handleDeposit()
             } else {
-              handleSpecificAmountDeposit()
+              await handleSpecificAmountDeposit()
             }
           }
-          else if (btnText === WITHDRAW) handleWithdraw()
+          else if (btnText === WITHDRAW) await handleWithdraw()
         }}
       >
         {btnText}
