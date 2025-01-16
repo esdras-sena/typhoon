@@ -126,7 +126,9 @@ const MainComponent = () => {
     if(account){
       getDeposits()
     }
-    setContent(depositContent)
+    if(!loading){
+      setContent(depositContent)
+    }
   }, [overallDeposits, srcToken, account])
 
 
@@ -147,7 +149,9 @@ const MainComponent = () => {
     if(account){
       getDeposits()
     }
-    setContent(depositContent)
+    if(!loading){
+      setContent(depositContent)
+    }
 
   }, [todayDeposits, denomination, srcToken, account])
 
@@ -449,8 +453,6 @@ const MainComponent = () => {
     const { abi: typhoonAbi } = await account.getClassAt(typhoonAddress);
 
     const typhoon = new Contract(typhoonAbi, typhoonAddress, account);
-    typhoon.connect(account)
-
 
     let pool = await typhoon.getPool(tokenToAddress[srcToken], getFullDenomination(denomination))
     let poolAddr = '0x' + pool.toString(16)
