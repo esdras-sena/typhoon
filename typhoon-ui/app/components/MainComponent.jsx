@@ -494,6 +494,7 @@ const MainComponent = () => {
       "pool": poolAddr,
       "day": rewardMode ? day.toString() : '1'
     })
+    console.log("creating file")
     createAndDownloadFile(proofElements)
     setLoadingText("Deposit Completed!")
     await new Promise(r => setTimeout(r, 2000));
