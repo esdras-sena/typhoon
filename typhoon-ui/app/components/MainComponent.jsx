@@ -380,7 +380,7 @@ const MainComponent = () => {
           {selectedDepositType === "Defined denominations" ? comp : specificAmountField()}
         </div>
         <div className='bg-[#212429] p-4 py-6 rounded-xl mt-5 border-[2px] border-transparent hover:border-zinc-600'>
-          {selectedDepositType === "Specific Amount"? "Overall today deposits": "today deposits for pool for token"}: {selectedDepositType === "Specific Amount"? overallDeposits: todayDeposits}
+          {selectedDepositType === "Specific Amount"? "Overall today deposits": "today deposits for pool"}: {selectedDepositType === "Specific Amount"? overallDeposits: todayDeposits}
         </div>
 
         <FormGroup className='mb-5'>
@@ -594,11 +594,11 @@ const MainComponent = () => {
     let proofsStringList = JSONInputStringToList(noteValue)
 
     for (let i = 0; i < proofsStringList.length; i++) {
-      setLoadingText(`Generating Proof (${i + 1}/${proofsStringList.length})... (This can take a few minutes)`)
+      setLoadingText(`Generating Proof (${i + 1}/${proofsStringList.length})... (This can take a few seconds)`)
       let proofString = JSON.parse(proofsStringList[i])
       let callData = await generateProofCalldata(proofString, receiverValue)
 
-      setLoadingText(`Withdrawing (${i + 1}/${proofsStringList.length})... (This can take a few minutes)`)
+      setLoadingText(`Withdrawing (${i + 1}/${proofsStringList.length})... (This can take a few seconds)`)
       const multiCall = await account.execute({
         contractAddress: typhoonAddress,
         entrypoint: 'withdraw',
