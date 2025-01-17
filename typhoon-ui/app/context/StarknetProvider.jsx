@@ -33,8 +33,6 @@ export function StarknetProvider({ children }) {
 
   const apiKey = process.env.NEXT_PUBLIC_API_KEY
   const nodeProvider = process.env.NEXT_PUBLIC_PROVIDER
-  console.log("API KEY", apiKey)
-  console.log("PROVIDER", nodeProvider)
 
   let provider;
   if (nodeProvider == "infura") {
