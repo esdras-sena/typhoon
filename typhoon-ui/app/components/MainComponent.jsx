@@ -232,6 +232,16 @@ const MainComponent = () => {
     }
   }, [address])
 
+  // useEffect(() => {
+  //   if (btnText === DEPOSIT) {
+  //     setBtnText(DEPOSIT)
+  //   } else if (btnText === WITHDRAW) {
+  //     setBtnText(WITHDRAW)
+  //   } else if (btnText === TELEGRAM_TRANSFER) {
+  //     setBtnText(TELEGRAM_TRANSFER)
+  //   }
+  // }, [btnText])
+
 
 
   useEffect(() => {
@@ -260,6 +270,8 @@ const MainComponent = () => {
             setContent(depositContent)
             if (address) {
               setBtnText(DEPOSIT)
+            } else {
+              setBtnText(CONNECT_WALLET)
             }
           }}
         >
@@ -272,6 +284,8 @@ const MainComponent = () => {
             setContent(withdrawContent)
             if (address) {
               setBtnText(WITHDRAW)
+            } else {
+              setBtnText(CONNECT_WALLET)
             }
           }}
         >
