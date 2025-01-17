@@ -31,8 +31,8 @@ export function StarknetProvider({ children }) {
     new ArgentMobileConnector(),
   ];
 
-  const apiKey = '5h7a0P2yMQsRFhIKvL0mlPur0zEAcViZ6E7OYMw1UxCe0kcGvnUVuOZsBURn4PdM';
-  const nodeProvider = 'nethermind';
+  // const apiKey = '5h7a0P2yMQsRFhIKvL0mlPur0zEAcViZ6E7OYMw1UxCe0kcGvnUVuOZsBURn4PdM';
+  // const nodeProvider = 'nethermind';
   const apiKeye = process.env.NEXT_PUBLIC_API_KEY
   const nodeProvidere = process.env.NEXT_PUBLIC_PROVIDER
 
