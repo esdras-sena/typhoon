@@ -91,7 +91,7 @@ const MainComponent = () => {
 
   const [denomination, setDenomination] = useState(one)
 
-  const [content, setContent] = useState()
+
 
   const [specificValue, setSpecificValue] = useState()
 
@@ -107,6 +107,37 @@ const MainComponent = () => {
   const [todayDeposits, setTodayDeposits] = useState(0)
 
   const [overallDeposits, setOverallDeposits] = useState(0);
+
+  let depositObj = {
+    denomination: denomination,
+    defaultValue: STRK,
+    setToken: setSrcToken,
+    setDenomination: setDenomination,
+    disabled: false
+  }
+
+  const [comp, setComp] = useState(<DepositField obj={depositObj} ref={depositRef} />)
+
+  let telegramObj = {
+    denomination: denomination,
+    defaultValue: STRK,
+    setToken: setSrcToken,
+    setDenomination: setDenomination,
+    disabled: true
+  }
+
+  let telegramInputObj = {
+    holder: "@handle",
+    setValue: setTelegramValue,
+    disabled: true
+  }
+
+  const [compT, setCompT] = useState(<DepositField obj={telegramObj} ref={depositRef} />)
+
+
+  const [btnText, setBtnText] = useState(CONNECT_WALLET)
+
+  const [content, setContent] = useState(depositContent)
 
   useEffect(() => {
     async function getDeposits() {
@@ -205,34 +236,6 @@ const MainComponent = () => {
   }
 
 
-  let depositObj = {
-    denomination: denomination,
-    defaultValue: STRK,
-    setToken: setSrcToken,
-    setDenomination: setDenomination,
-    disabled: false
-  }
-
-  const [comp, setComp] = useState(<DepositField obj={depositObj} ref={depositRef} />)
-
-  let telegramObj = {
-    denomination: denomination,
-    defaultValue: STRK,
-    setToken: setSrcToken,
-    setDenomination: setDenomination,
-    disabled: true
-  }
-
-  let telegramInputObj = {
-    holder: "@handle",
-    setValue: setTelegramValue,
-    disabled: true
-  }
-
-  const [compT, setCompT] = useState(<DepositField obj={telegramObj} ref={depositRef} />)
-
-
-  const [btnText, setBtnText] = useState(CONNECT_WALLET)
 
 
   useEffect(() => {
@@ -279,7 +282,9 @@ const MainComponent = () => {
           className={getNavIconClassName(DEPOSIT)}
           onClick={() => {
             setSelectedNavItem(DEPOSIT)
-            setContent(depositContent)
+            if (!loading) {
+              setContent(depositContent)
+            }
             if (address) {
               setBtnText(DEPOSIT)
             } else {
@@ -293,7 +298,9 @@ const MainComponent = () => {
           className={getNavIconClassName(WITHDRAW)}
           onClick={() => {
             setSelectedNavItem(WITHDRAW)
-            setContent(withdrawContent)
+            if (!loading) {
+              setContent(withdrawContent)
+            }
             if (address) {
               setBtnText(WITHDRAW)
             } else {
@@ -307,7 +314,9 @@ const MainComponent = () => {
           className={getNavIconClassName(TELEGRAM)}
           onClick={() => {
             setSelectedNavItem(TELEGRAM)
-            setContent(telegramContent)
+            if (!loading) {
+              setContent(telegramContent)
+            }
             setBtnText(TELEGRAM_TRANSFER)
           }}
         >
@@ -618,7 +627,7 @@ const MainComponent = () => {
     setLoading(true)
     setLoadingText("Initiating Withdraw...")
     await new Promise(r => setTimeout(r, 1000));
-    
+
 
     let proofsStringList = JSONInputStringToList(noteValue)
 
