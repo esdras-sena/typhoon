@@ -21,7 +21,7 @@ dotenv.config()
 
 export function StarknetProvider({ children }) {
   const { connectors: injected } = useInjectedConnectors({
-    recommended: [argent(), braavos()],
+    recommended: [braavos()],
     includeRecommended: "always",
   });
 
