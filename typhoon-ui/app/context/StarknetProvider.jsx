@@ -51,7 +51,7 @@ export function StarknetProvider({ children }) {
   return (
     <StarknetConfig
       connectors={connectors}
-      chains={[sepolia]}
+      chains={[mainnet, sepolia]}
       provider={provider}
       explorer={starkscan}
       autoConnect
