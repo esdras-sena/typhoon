@@ -515,7 +515,7 @@ const MainComponent = () => {
           _reward: rewardMode
         }),
       },
-    ]);
+    ], {version:2});
 
     await account.waitForTransaction(multiCall.transaction_hash);
 
@@ -594,7 +594,7 @@ const MainComponent = () => {
       }),
     })
     setLoadingText("Depositing...")
-    const multiCall = await account.execute(approvalsAndDeposit);
+    const multiCall = await account.execute(approvalsAndDeposit, {version:2});
 
     await account.waitForTransaction(multiCall.transaction_hash);
 
@@ -642,9 +642,8 @@ const MainComponent = () => {
         calldata: CallData.compile({
           full_proof_with_hints_list: cairo.tuple(callData),
         }),
-      });
+      }, {version:2});
       await account.waitForTransaction(multiCall.transaction_hash);
-
     }
 
 
