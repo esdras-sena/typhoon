@@ -128,7 +128,15 @@ const MainComponent = () => {
     if(account){
       getDeposits()
     }
-    setContent(depositContent)
+    if (!loading) {
+      if (btnText == DEPOSIT) {
+        setContent(depositContent)
+      } else if (btnText == WITHDRAW) {
+        setContent(withdrawContent)
+      } else if (btnText == TELEGRAM_TRANSFER) {
+        setContent(telegramContent)
+      }
+    }
   }, [overallDeposits, srcToken, account])
 
 
@@ -149,7 +157,15 @@ const MainComponent = () => {
     if(account){
       getDeposits()
     }
-    setContent(depositContent)
+    if (!loading) {
+      if (btnText == DEPOSIT) {
+        setContent(depositContent)
+      } else if (btnText == WITHDRAW) {
+        setContent(withdrawContent)
+      } else if (btnText == TELEGRAM_TRANSFER) {
+        setContent(telegramContent)
+      }
+    }
 
   }, [todayDeposits, denomination, srcToken, account])
 
