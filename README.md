@@ -43,6 +43,14 @@ Telegram Relayers are being developed to become the main feature of the Typhoon 
 
 In essence, the introduction of Telegram Relayers within the Typhoon protocol is not just a feature, it's a leap towards democratizing blockchain privacy, making it a collective endeavor accessible to all, not just the technically adept. It's about fostering an ecosystem where privacy, income, and blockchain interaction harmoniously coexist.
 
+### Typhoon Reward System
+
+Typhoon rewards its liquidity providers (LPs) with a portion of the fees from user withdrawals (when the reward mode is activated). If the Reward mode is activated in your deposit, your commitment will be hashed with the day timestamp (00:00 UTC of the  current day) to make sure that only a valid day can generate a valid Merkle Tree root. At the moment of your withdraw the deposit day timestamp of your proof public signals will be used to calculate the amount of days that you provide liquidity for Typhoon, and you’ll get your part of the accrued fees as reward. The accrued fees are splitted between the liquidity providers and Typhoon (As protocol revenue).
+
+### Deposit Mechanism
+
+Typhoon's Deposit mechanism offers two modes of deposit. The first mode, familiar to Tornado Cash users, involves selecting a specific denomination for your deposit, which then mixes into a pool with matching deposits, rendering individual transactions indistinguishable. The second mode of Typhoon Deposit allows you to input any large amount, which gets cleverly splitted among existing pools, ensuring privacy even for specific and large amounts. The only caveat: the amount must be divisible by 1 * (10^16), with any remainder automatically subtracted and not claimed by Typhoon, maintaining the integrity and privacy of the system.
+
 ## Garaga
 
 [Garaga](https://github.com/keep-starknet-strange/garaga) is a great project from     Keep Starknet Strange (visit their repo [here](https://github.com/keep-starknet-strange)) that enables efficient elliptic curve operations on Starknet and is a very important part of Typhoon, with Garaga was possible to generate the verifier contract to verify the SNARK proofs from Typhoon.
